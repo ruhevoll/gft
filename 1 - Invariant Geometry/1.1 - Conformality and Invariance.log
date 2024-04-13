@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.11)  12 APR 2024 19:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.11)  12 APR 2024 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -301,45 +301,45 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
 (Font)              scaled to size 10.0pt on input line 15.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
+(Font)              scaled to size 12.0pt on input line 19.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 39.
+(Font)              scaled to size 10.0pt on input line 42.
 [1
 
 {C:/Users/swhit/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-[3] (1.1 - Conformality and Invariance.aux) ) 
+[3] [4] (1.1 - Conformality and Invariance.aux) ) 
 Here is how much of TeX's memory you used:
- 4543 strings out of 478338
- 69014 string characters out of 2836699
- 387786 words of memory out of 3000000
- 22916 multiletter control sequences out of 15000+600000
+ 4545 strings out of 478338
+ 69033 string characters out of 2836699
+ 386786 words of memory out of 3000000
+ 22918 multiletter control sequences out of 15000+600000
  489016 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,22n,77p,387b,302s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/swhit/AppData/Local/Prog
-rams/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/Users/swhit/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/swhit/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/s
-whit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
-:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/swhit/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/swhit/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/swhit/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/sw
-hit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.p
-fb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmbi
-.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztm
-r.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
-mri.pfb>
-Output written on "1.1 - Conformality and Invariance.pdf" (3 pages, 257389 byte
+ 72i,22n,77p,726b,302s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/swhit/AppData/Local/
+Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/Users/swhit/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/swhit/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Use
+rs/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/swhit/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/swhit/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/swhit/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/User
+s/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
+mb.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/z
+tmbi.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx
+/ztmr.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newt
+x/ztmri.pfb>
+Output written on "1.1 - Conformality and Invariance.pdf" (4 pages, 273072 byte
 s).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

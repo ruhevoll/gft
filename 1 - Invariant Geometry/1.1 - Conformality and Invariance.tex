@@ -12,7 +12,10 @@
 \begin{document}
 	\maketitle 
 	
-\noindent \textbf{\textit{Goal:}} Define a notion of distance that is preserved under holomorphic maps. Let's see why the regular notion of distance doesn't give us what we want.
+\noindent \textbf{\textit{Goal:}} Define a notion of distance that is preserved under holomorphic \& conformal maps. Let's see why the regular notion of distance doesn't give us what we want.
+
+
+
 \subsection*{The Jacobian of a Holomorphic Function}
 
 
@@ -109,4 +112,32 @@ we have just shown that
 				\item[(iii)] A composition of mappings of type (i) and (ii).
 			\end{itemize}
 	\end{theorem}
+
+\subsection*{Constructing the Poincaré Metric}
+To "discover" the Poincaré metric, we start with what we want (invariance of the metric under conformal mappings) and go from there. 
+	\begin{enumerate}
+		\item Given any vector, sourcing from a point $P$ in the direction of $\mathbf{v}$, denote its \textit{length} by $|\mathbf{v}|_P$. 
+		
+		\item Declare that the length of $\mathbf{e} = (1, 0)$ is 1. So, $|\mathbf{e}|_0 = 1$. 
+		
+		\item If $\phi$ is a conformal self-map of the disk, then we claim that the condition
+			\begin{equation}
+				|\mathbf{v}|_P = |\phi_\ast(P) \mathbf{v}|_{\phi(P)},
+			\end{equation}
+		where $\phi_\ast(P)\mathbf{v} := \phi'(P) \cdot \mathbf{v}$ denotes the \textit{\textbf{push-forward}} by $\phi$ of the vector $\mathbf{v}$, is equivalent to invariance under this new metric we're defining. Why? Since $\phi'(P)$ is the Jacobian of $\phi$ at $P$, then by our previous work, this action amounts to a rotation and a scaling. We're saying the above condition encapsulates that, after that rotation and scaling, the length of our vector stays the same. Now, we are \textit{requiring} that $|\cdot|$ is such that (4) works for any conformal self-map of the disk $\phi$. We're using this condition to derive an explicit formula for $|\cdot|$.
+		
+		
+		\item Let $\phi(z) = e^{i \lambda} \cdot z$. Then, first of all $$\phi(z) = (\cos \lambda + i \sin \lambda)(x + iy) = x \cos \lambda  - y \sin \lambda + i (x \sin \lambda + y \cos \lambda)$$ so then, 
+			$$\phi'(z) = \begin{bmatrix} \cos \lambda & -\sin \lambda \\ \sin \lambda & \cos \lambda \end{bmatrix}$$  
+		Condition (4) says that we must have $$1 = |\mathbf{e}|_0 = |\phi_\ast(0) \mathbf{e}|_{\phi(0)} = |e^{i \lambda} \cdot \mathbf{e}|_0 = |e^{i \lambda}|_0$$ Therefore, we conclude the length of any Euclidean unit vector based at the origin is 1 in this new invariant metric.
+		
+		\item Let $\phi(z)$ be the Möbius transformation $$\psi(z) = \frac{z + a}{1 + \overline{a} z}$$ with $a \in \mathbb{C}$, $|a| < 1$. Let $\mathbf{v} = e^{i \lambda}$ be a unit vector at the origin. Then, with $$\psi'(0) = 1 - |a|^2$$ and (4), we have $$1 = |\mathbf{v}|_0 = |\psi_\ast(0) \mathbf{v}|_{\psi(0)} = |(1 - |a|^2) \cdot \mathbf{v}|_a$$ Hence, $$|\mathbf{v}|_a = \frac{1}{1 - |a|^2}.$$
+		We are ready.
+	\end{enumerate}
+
+	\begin{definition}[The Poincaré Metric]
+		Let $P$ be a point of the unit disk $D$ and let $\mathbf{v}$ be any vector based at that point. Then, $$\boxed{|\mathbf{v}|_P = \frac{\norm{\mathbf{v}}}{1 - |P|^2}}$$ is called the \textbf{\textit{Poincaré metric}}. 
+	\end{definition}
+
+	\noindent Note that, with the above definition, $|\mathbf{v}|_P$ as $P$ approaches $\partial D$. 
 \end{document}
