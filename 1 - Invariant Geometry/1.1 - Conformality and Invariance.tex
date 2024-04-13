@@ -1,0 +1,112 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath, amssymb, amsthm, newtxtext, physics}
+\title{\textbf{Conformality and Invariance}}
+\date{}
+\usepackage[margins = 0.25in]{geometry}
+\theoremstyle{plain} 
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{observation}{Observation}
+\begin{document}
+	\maketitle 
+	
+\noindent \textbf{\textit{Goal:}} Define a notion of distance that is preserved under holomorphic maps. Let's see why the regular notion of distance doesn't give us what we want.
+\subsection*{The Jacobian of a Holomorphic Function}
+
+
+Let $U \subseteq \mathbb{C}$ be an open set, $P \in U$ a fixed point, and $f: U \to \mathbb{C}$ a holomorphic function on $U$. For $f(x + iy) = u(x, y) + iv(x,y)$, we can consider $f$ as a mapping $(x, y) \to (u, v)$, where we get the real Jacobian matrix of $f$ at $P$: 
+	\begin{eqnarray}
+		J(P) = \begin{pmatrix}u_x(P) & u_y(P) \\ v_x(P) & v_y(P)\end{pmatrix}
+	\end{eqnarray}
+Since $f$ is holomorphic, by the Cauchy-Riemann equations we know that
+	\begin{equation}
+		\boxed{u_x = v_y, \qquad u_y = -v_x}
+	\end{equation}
+Hence, we can simplify (1) in the following way:
+	\begin{align*}
+		J(P) &=  \begin{pmatrix}u_x(P) & u_y(P) \\ v_x(P) & v_y(P)\end{pmatrix} \\
+		&= \begin{pmatrix}u_x(P) & u_y(P) \\ -u_y(P) & u_x(P)\end{pmatrix} \\
+		&= \underbrace{\sqrt{u_x(P)^2 + u_y(P)^2}}_{=: h(P)} \cdot \underbrace{ \begin{pmatrix} \frac{u_x(P)}{\sqrt{u_x(P)^2 + u_y(P)^2}} & \frac{u_y(P)}{\sqrt{u_x(P)^2 + u_y(P)^2}} \\ \frac{-u_y(P)}{\sqrt{u_x(P)^2 + u_y(P)^2}} & \frac{u_x(P)}{\sqrt{u_x(P)^2 + u_y(P)^2}} \end{pmatrix}} _{=: \mathcal{J}(P)}
+	\end{align*}
+Then, 
+	\begin{equation}
+		J(P) \equiv h(P) \cdot \mathcal{J(P)}.
+	\end{equation}
+
+We now make the following observations:
+	\begin{observation} ~
+		\begin{itemize}
+			\item[(1)] $\mathcal{J}(P)$ is an orthogonal matrix.
+			\item[(2)] The rows of $\mathcal{J}(P)$ form an orthonormal basis for $\mathbb{R}^2$ with positive orientation. 
+			\item[(3)] For $\mathbf{x}, \mathbf{y} \in \mathbb{R}^2$, $$\norm{J(P) \mathbf{x} - J(P) \mathbf{y}} = h(P) \norm{\mathbf{x} - \mathbf{y}}.$$
+			
+			\item[(4)] If $\angle(\mathbf{x}, \mathbf{y})$ denotes the angle between two vectors $\mathbf{x}, \mathbf{y} \in \mathbb{R}^2$, then $$\angle (\mathbf{x}, \mathbf{y}) = \angle(J(P) \mathbf{x}, J(P) \mathbf{y}).$$
+		\end{itemize}
+	\end{observation}
+	\begin{proof} ~
+		\begin{itemize}
+			\item[(1)] We have,
+				\begin{align*}
+					\left[\mathcal{J}(P) \cdot \mathcal{J}(P)^T\right]_{ij} &= [\mathcal{J}(P)]_{i1} [\mathcal{J}(P)^T]_{1j} + [\mathcal{J}(P)]_{i2} [\mathcal{J}(P)^T]_{2j} \\
+					&= [\mathcal{J}(P)]_{i1} [\mathcal{J}(P)]_{j1} + [\mathcal{J}(P)]_{i2} [\mathcal{J}(P)]_{j2}
+				\end{align*}
+			So, by direct computation,
+				\begin{align*}
+					\left[\mathcal{J}(P) \cdot \mathcal{J}(P)^T\right]_{11} &= [\mathcal{J}(P)]_{11}^2 + [\mathcal{J}(P)]_{12}^2 \\
+					&= \left(\frac{u_x(P)}{\sqrt{u_x(P)^2 + u_y(P)^2}}\right)^2 + \left(\frac{u_y(P)}{\sqrt{u_x(P)^2 + u_y(P)^2}}\right)^2 \\ \\
+					&= \frac{u_x(P)^2}{u_x(P)^2 + u_y(P)^2} + \frac{u_y(P)^2}{u_x(P)^2 + u_y(P)^2} \\
+					&= \frac{u_x(P)^2 + u_y(P)^2}{u_x(P)^2 + u_y(P)^2} \\
+					&= 1 \\ 
+					\\
+					\left[\mathcal{J}(P) \cdot \mathcal{J}(P)^T\right]_{12} &= [\mathcal{J}(P)]_{11} \underbrace{[\mathcal{J}(P)]_{21}}_{= - [\mathcal{J}(P)]_{12}} + [\mathcal{J}(P)]_{12} \underbrace{[\mathcal{J}(P)]_{22}}_{= [\mathcal{J}(P)]_{11}} \\
+					&= -[\mathcal{J(P)}]_{11} [\mathcal{J}(P)]_{12} + [\mathcal{J(P)}]_{11} [\mathcal{J}(P)]_{12} \\
+					&= 0 \\
+					\\
+					\left[\mathcal{J}(P) \cdot \mathcal{J}(P)^T\right]_{21} &= [\mathcal{J}(P)]_{21} [\mathcal{J}(P)]_{11} + [\mathcal{J}(P)]_{22}[\mathcal{J}(P)]_{12} \\
+					&= 0 \\
+					\\
+						\left[\mathcal{J}(P) \cdot \mathcal{J}(P)^T\right]_{22} &= [\mathcal{J}(P)]_{21}^2 + [\mathcal{J}(P)]_{22}^2 \\
+						&= (-[\mathcal{J}(P)]_{12})^2 + [\mathcal{J}(P)]_{22}^2 \\
+						&= 1.
+				\end{align*}
+		Hence, $$\mathcal{J}(P) \cdot \mathcal{J}(P)^T = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}.$$
+			\item[(2)] Just view the above computation, as we have shown that $$[\mathcal{J}(P)]_{11} [\mathcal{J}(P)]_{21} + [\mathcal{J}(P)]_{12} [\mathcal{J}(P)]_{22} = 0.$$ To show that the rows form an orthonormal basis with \textit{positive} orientation, we have
+				\begin{align*}
+					([\mathcal{J}(P)]_{11} \mathbf{i} + [\mathcal{J}(P)]_{12} \mathbf{j}) &\times ([\mathcal{J}(P)]_{21} \mathbf{i} + [\mathcal{J}(P)]_{22} \mathbf{j}) = \begin{vmatrix} [\mathcal{J}(P)]_{11} &  [\mathcal{J}(P)]_{12} \\  [\mathcal{J}(P)]_{21} & [\mathcal{J}(P)]_{22}\end{vmatrix} \mathbf{k} \\
+					&= ([\mathcal{J}(P)]_{11} [\mathcal{J}(P)]_{22} - [\mathcal{J}(P)]_{12} [\mathcal{J}(P)]_{21})\mathbf{k} \\
+					&= ([\mathcal{J}(P)]_{11}^2 + [\mathcal{J}(P)]_{12}^2) \mathbf{k}\\
+					&= +\mathbf{k}
+				\end{align*}
+			
+			\item[(3) - (4)] Since $\mathcal{J}(P)$ is an orthogonal matrix, it preserves lengths of vectors and angles between them, and thus (3) follows. A scaling transformation, which is what $h(P)$ is, obviously preserves angles, and so (4) follows. 
+		\end{itemize}
+	\end{proof}
+
+\subsection*{Conformal Mappings of the Unit Disk}
+\noindent Since the author of this book says that\textbf{\textit{ conformal mappings}} are characterized by the fact that they infinitesimally 
+	\begin{itemize}
+		\item[(i)] preserve angles, and
+		\item[(ii)] preserve length (up to a scalar factor) 
+	\end{itemize}
+we have just shown that
+	\begin{theorem}
+		The Jacobian $J(P)$ of a holomorphic map $f: U \subseteq \mathbb{C} \to \mathbb{C}$ at a point $P \in U$ is a conformal map. 
+	\end{theorem}
+\noindent 
+	Despite this, $J(P)$ fails to preserve distances. So we have an example of a conformal map that doesn't preserve Euclidean distance. Let's reduce our view to conformal mappings of the unit disk for the time being. 
+
+	When $U$ is the unit disk in $\mathbb{C}$, we have a nice classification theorem for all conformal mappings on $U$. 
+	
+	\begin{theorem}[The Conformal Mappings of the Unit Disk]
+		Let $D = D(0, 1)$ denote the unit disk in $\mathbb{C}$. Then a conformal mapping on $D$ is either
+			\begin{itemize}
+				\item[(i)] A rotation $\rho_\lambda : z \mapsto e^{i \lambda} \cdot z$, $0 \leq \lambda < 2 \pi$;
+				
+				\item[(ii)] A Möbius transformation of the form $\varphi_a : z \mapsto [z - a]/[1 - \overline{a} z]$, $a \in \mathbb{C}$, $|a| < 1$; or 
+				
+				\item[(iii)] A composition of mappings of type (i) and (ii).
+			\end{itemize}
+	\end{theorem}
+\end{document}
