@@ -1,2 +1,4 @@
 # gft
- Notes for Geometric Function Theory by Steven Krantz
+ (Perhaps lecture) Notes for Geometric Function Theory by Steven Krantz
+
+  
