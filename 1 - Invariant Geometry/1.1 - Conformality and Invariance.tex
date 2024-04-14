@@ -10,6 +10,7 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{example}{Example}
 \newtheorem{observation}{Observation}
+\newtheorem{proposition}{Proposition}
 \begin{document}
 	\maketitle 
 	
@@ -155,5 +156,28 @@ To "discover" the Poincaré metric, we start with what we want (invariance of th
 			Let $\gamma: [0, 1] \to D$ be a continuously differentiable curve. The \textbf{\textit{length}} of $\gamma$ in the Poincaré metric is given by $$\ell(\gamma) = \int_0^1 |\gamma'(t)|_{\gamma(t)} \ dt = \int_0^1 \frac{\norm{\gamma'(t)}}{1 - |\gamma(t)|} \ dt.$$ 
 		\end{definition} 
 	
-	
+		\begin{example}
+			Let $\epsilon > 0$ and consider the curve $\gamma(t) = (1 - \epsilon)t$, $0 \leq t \leq 1$. Then, the length of $\gamma$ is given by
+				\begin{align*}
+					\ell(\gamma) &= \int_0^1 |\gamma'(t)|_{\gamma(t)} = \int_0^1 \frac{(1 - \epsilon)}{1 - |\gamma(t)|^2} \ dt \\
+					&= \int_0^1 \frac{(1 - \epsilon)}{1 - [(1 - \epsilon)t]^2} \ dt = \frac{1}{2}\int_{u(0)}^{u(1)} \frac{du}{1 - u} \qquad u = (1 - \epsilon)t^2 \\ 
+					&=  \frac{1}{2} \left[\log \left(\abs{\frac{u(1) + 1}{u(1) - 1}}\right) - \log\left(\abs{\frac{u(0) - 1}{u(0) + 1}}\right)\right] = \frac{1}{2}\left[ \log\left(\frac{2 - \epsilon}{\epsilon}\right) - \log\left(\abs{\frac{-1}{1}}\right) \right]\\
+					&= \frac{1}{2} \log \left(\frac{2 - \epsilon}{\epsilon}\right)
+				\end{align*} 
+			
+		\end{example}
+		
+		The use of this example is to give a computational understanding of Figure 1. As $\epsilon \to 0^+$, $\ell(\gamma) \to +\infty$. As $\epsilon \to 0^+$, $\ell(\gamma)$ is becoming the line connecting $0$ to the boundary point $(\cos(\pi/4), \sin(\pi/4))$, in some sense, the distance from 0 to the boundary (along this linear path) is infinite. 
+		
+		\begin{definition}
+			Let $P, Q \in D$. Then, the \textbf{\textit{Poincaré distance}} $d(P, Q)$ between $P$ and $Q$ is given by $$d(P, Q) = \inf_{\gamma \in E} \ell(\gamma)$$ where $E$ is the collection of all piecewise continuously differentiable curves connecting $P$ to $Q$. (Note that the length of a piecewise differentiable curve is the sum of the lengths of its continuously differentiable pieces.)
+		\end{definition}
+		\begin{proposition}
+				\begin{itemize}
+					\item[(1)] The disk $D$ equipped with the Poincaré distance $d(\cdot, \cdot)$ is a metric space. 
+					
+					\item[(2)] Let $P \in D$. Then, the Poincaré distance of $0$ to $P$ is equal to $$d(0, P) = \frac{1}{2} \cdot \log \frac{1 + |P|}{1 - |P|}.$$
+				\end{itemize}
+			
+		\end{proposition}
 \end{document}
