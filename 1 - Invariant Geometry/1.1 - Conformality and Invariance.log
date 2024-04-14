@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.11)  14 APR 2024 10:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.11)  14 APR 2024 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,47 +362,65 @@ Package pdftex.def Info: images/pcmetric.JPG  used on input line 151.
 (pdftex.def)             Requested size: 312.79283pt x 134.00029pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 152.
- [4] [5 <./images/pcmetric.JPG>] [6] (1.1 - Conformality and Invariance.aux) ) 
+ [4] [5 <./images/pcmetric.JPG>]
+LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input li
+ne 188.
+
+(C:\Users\swhit\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxsups.fd
+File: ot1ntxsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
+(Font)              scaled to size 8.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 8.0pt on input line 188.
+
+[6] [7] (1.1 - Conformality and Invariance.aux) ) 
 Here is how much of TeX's memory you used:
- 5391 strings out of 478338
- 82090 string characters out of 2836699
+ 5433 strings out of 478338
+ 82935 string characters out of 2836699
  400052 words of memory out of 3000000
- 23722 multiletter control sequences out of 15000+600000
- 493043 words of font info for 88 fonts, out of 8000000 for 9000
+ 23756 multiletter control sequences out of 15000+600000
+ 498678 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,22n,77p,1012b,302s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{
-C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.
-enc}<C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmbx9.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/swhit/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/swhit/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/swhit/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/swhit/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/User
-s/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr6.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr7.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr9.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/swhit/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/swhit/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/swhit/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/swhit/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
-Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newt
-x/ztmb.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
-tx/ztmbi.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
-ewtx/ztmr.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-newtx/ztmri.pfb>
-Output written on "1.1 - Conformality and Invariance.pdf" (6 pages, 418524 byte
+ 72i,22n,77p,2331b,335s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/swhit/AppData/Local/
+Programs/MiKTeX/fonts/enc/dvips/newtx/ntxsups_ot1.enc}{C:/Users/swhit/AppData/L
+ocal/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/Users/swhit/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/s
+whit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:
+/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi6.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/swhit/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/swhit/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/swhit/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/swhit/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/
+swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
+/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.
+pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy6.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/swhit/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/swhit/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/swhi
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ntxsups-Regular.pfb><C
+:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><
+C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmbi.pfb
+><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pf
+b><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.
+pfb>
+Output written on "1.1 - Conformality and Invariance.pdf" (7 pages, 433902 byte
 s).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
