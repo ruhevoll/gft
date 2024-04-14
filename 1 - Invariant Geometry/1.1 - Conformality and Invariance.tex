@@ -139,5 +139,13 @@ To "discover" the Poincaré metric, we start with what we want (invariance of th
 		Let $P$ be a point of the unit disk $D$ and let $\mathbf{v}$ be any vector based at that point. Then, $$\boxed{|\mathbf{v}|_P = \frac{\norm{\mathbf{v}}}{1 - |P|^2}}$$ is called the \textbf{\textit{Poincaré metric}}. 
 	\end{definition}
 
-	\noindent Note that, with the above definition, $|\mathbf{v}|_P$ as $P$ approaches $\partial D$. 
+	\noindent Note that, with the above definition, $|\mathbf{v}|_P$ as $P$ approaches $\partial D$, my ramen noodles get cold. Just kidding. Actually, $|\mathbf{v}|_P \to \infty$ is what happens, but at the same time my ramen noodles do indeed get cold.
+	
+	
+	We now define the length of a curve under the Poincaré metric using geodesics. 
+		\begin{definition}
+			Let $\gamma: [0, 1] \to D$ be a continuously differentiable curve. The \textbf{\textit{length}} of $\gamma$ in the Poincaré metric is given by $$\ell(\gamma) = \int_0^1 |\gamma'(t)|_{\gamma(t)} \ dt = \int_0^1 \frac{\norm{\gamma'(t)}}{1 - |\gamma(t)|} \ dt.$$ 
+		\end{definition} 
+	
+	To see an example, take $\epsilon > 0$ and consider the curve $\gamma(t) = (1 - \epsilon)t$, $0 \leq t \leq 1$. 
 \end{document}
