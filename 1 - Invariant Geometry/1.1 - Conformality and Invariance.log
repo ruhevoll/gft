@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.11)  15 APR 2024 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.12.11)  15 APR 2024 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,30 +238,30 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \c@observation=\count285
 \c@proposition=\count286
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 15.
+e 16.
 (C:\Users\swhit\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 15.
+(Font)              scaled to size 10.0pt on input line 16.
 
 (1.1 - Conformality and Invariance.aux)
 \openout1 = `"1.1 - Conformality and Invariance.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 \c@mv@tabular=\count287
 \c@mv@boldtabular=\count288
 
@@ -325,121 +325,133 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 16.
+(Font)              scaled to size 17.28pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 16.
+(Font)              scaled to size 17.28pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+(Font)              scaled to size 12.0pt on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 (C:\Users\swhit\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (C:\Users\swhit\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 17.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 17.
 
-LaTeX Warning: No \author given.
-
+(C:\Users\swhit\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 17.
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 17.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 18.
+(Font)              scaled to size 10.0pt on input line 19.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
-(Font)              scaled to size 10.0pt on input line 18.
+(Font)              scaled to size 10.0pt on input line 19.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 22.
+(Font)              scaled to size 12.0pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 45.
+(Font)              scaled to size 10.0pt on input line 46.
+
 [1
 
 {C:/Users/swhit/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-[3]
-<images/pcmetric.JPG, id=27, 1251.17438pt x 536.0025pt>
+[3] [4]
+<images/pcmetric.JPG, id=31, 1251.17438pt x 536.0025pt>
 File: images/pcmetric.JPG Graphic file (type jpg)
 <use images/pcmetric.JPG>
-Package pdftex.def Info: images/pcmetric.JPG  used on input line 152.
+Package pdftex.def Info: images/pcmetric.JPG  used on input line 153.
 (pdftex.def)             Requested size: 312.79283pt x 134.00029pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 153.
- [4] [5 <./images/pcmetric.JPG>]
+(Font)              scaled to size 9.0pt on input line 154.
+ [5 <./images/pcmetric.JPG>]
 LaTeX Font Info:    Trying to load font information for OT1+ntxsups on input li
-ne 191.
+ne 192.
 
 (C:\Users\swhit\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxsups.fd
 File: ot1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 191.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 191.
+(Font)              scaled to size 10.0pt on input line 192.
 LaTeX Font Info:    Font shape `OT1/ntxsups/m/n' will be
-(Font)              scaled to size 8.0pt on input line 191.
+(Font)              scaled to size 8.0pt on input line 192.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 191.
+(Font)              scaled to size 8.0pt on input line 192.
 
 [6]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 201.
+(Font)              scaled to size 8.0pt on input line 202.
  [7]
 LaTeX Font Info:    Font shape `OT1/ntxsups/m/it' will be
-(Font)              scaled to size 10.0pt on input line 218.
+(Font)              scaled to size 10.0pt on input line 219.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 236.
+(Font)              scaled to size 7.0pt on input line 237.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 236.
+(Font)              scaled to size 5.0pt on input line 237.
  [8] [9] [10] [11] (1.1 - Conformality and Invariance.aux) ) 
 Here is how much of TeX's memory you used:
- 5450 strings out of 478338
- 83132 string characters out of 2836699
- 400089 words of memory out of 3000000
- 23767 multiletter control sequences out of 15000+600000
- 504266 words of font info for 105 fonts, out of 8000000 for 9000
+ 5487 strings out of 478338
+ 83827 string characters out of 2836699
+ 400352 words of memory out of 3000000
+ 23798 multiletter control sequences out of 15000+600000
+ 506880 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,22n,77p,2331b,335s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,22n,77p,2331b,353s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/swhit/App
 Data/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntxsups_ot1.enc}{C:/Users/swhi
-t/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<C:/Users
-/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-bx9.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cmextra/cmex8.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/swhit/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/swhit/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/swhit/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/swhit/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/User
-s/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-<C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr6.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr7.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/swhit/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/swhit/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/swhit/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/swhit/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/s
-whit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
-/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy9.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/symbols/msam10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/swhit/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/swhit/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/newtx/ntxsups-Italic.pfb><C:/Users/swhi
-t/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ntxsups-Regular.pfb><C
-:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><
-C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmbi.pfb
-><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pf
-b><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.
-pfb>
-Output written on "1.1 - Conformality and Invariance.pdf" (11 pages, 509479 byt
+t/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Users
+/swhit/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}<C:/Use
+rs/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx9.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmex10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cmextra/cmex8.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/swhit/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/swhit/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/swhit/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/swhi
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Us
+ers/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pf
+b><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr5.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/swhit/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/swhit/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/swhit/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/swhit/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
+/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy9.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/symbols/msam10.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/swhit/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/swhit/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/newtx/ntxsups-Italic.pfb><C:/Users/sw
+hit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ntxsups-Regular.pfb>
+<C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.
+pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb
+.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztm
+bi.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/z
+tmr.pfb><C:/Users/swhit/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/
+ztmri.pfb>
+Output written on "1.1 - Conformality and Invariance.pdf" (11 pages, 514603 byt
 es).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
+ 202 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
