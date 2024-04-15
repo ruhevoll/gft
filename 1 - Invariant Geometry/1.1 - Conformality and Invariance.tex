@@ -198,7 +198,7 @@ To "discover" the Poincaré metric, we start with what we want (invariance of th
 						Let $\{(\gamma_{xy}^{(n)}, \gamma_{yz}^{(n)})\}_{n \in \mathbb{N}}$ be a sequence of pairs of piecewise differentiable curves connecting $x$ to $y$ and $y$ to $z$ respectively, such that $\ell(\gamma_{xy}^{(1)}) + \ell(\gamma_{yz}^{(1)}) \geq \ell(\gamma_{xy}^{(2)}) + \ell(\gamma_{yz}^{(2)}) \geq \cdots$ decreasing to the limit $d(x, y) + d(y, z)$. For each $n \in \mathbb{N}$, we define the following path from $x$ to $z$ $$\gamma_{xz}^{(n)}(t) := \begin{cases}\gamma_{xy}^{(n)}(2t) & 0 \leq t \leq \frac{1}{2} \\ \gamma_{yz}^{(n)}(2t - 1) & \frac{1}{2} < t < 1\end{cases}$$ and we have the following inequality for all $n \in \mathbb{N}$: $$d(x, z) \leq \ell(\gamma_{xz}^{(n)}(t)) = \ell(\gamma_{xy}^{(n)}(t)) + \ell(\gamma_{yz}^{(n)})(t).$$ Letting $n \to \infty$ gives $d(x, z) \leq d(x, y) + d(y, z)$ as desired. 
 					\end{itemize}
 				
-				\item[(2)] We first make the note that the definition of length is rotationally invariant since $\norm{\cdot}$ and $|\cdot|$ are. Hence, it suffices to let $P$ be a positive real number $P = (1 - \epsilon) + i0 = (1 - \epsilon, 0)$. Without loss of generality\footnote{We don't lose generality because for any path $\gamma = \gamma_1 + i \gamma_2$, $\gamma_1(0) = 0, \gamma_1(1) = 1 - \epsilon$, the most efficient choice of $\gamma_1$ is a reparametrization of $t$ so that $\gamma$'s time domain is $[0, 1 - \epsilon]$ and $\gamma_1(t) = t$... most efficient in the sense that this is the best choice of $\gamma_1(t)$ to minimize $\norm{\gamma'(t)} = \sqrt{1 + |\gamma_2'(t)|^2}$. }, we consider only curves of the form $\gamma(t) = (t, g(t))$ for $0 \leq t \leq 1 - \epsilon$. Then 
+				\item[(2)] We first make the note that the definition of length is rotationally invariant since $\norm{\cdot}$ and $|\cdot|$ are. Hence, it suffices to let $P$ be a positive real number $P = (1 - \epsilon) + i0 = (1 - \epsilon, 0)$. Without loss of generality\footnote{We don't lose generality because for any path $\gamma = \gamma_1 + i \gamma_2$, $\gamma_1(0) = 0, \gamma_1(1) = 1 - \epsilon$, the most efficient choice of $\gamma_1$ is a reparametrization of $t$ so that $\gamma$'s time domain is $[0, 1 - \epsilon]$ and $\gamma_1(t) = t$... most efficient in the sense that this is the best choice of $\gamma_1(t)$ to minimize $\norm{\gamma'(t)} = \sqrt{1 + |\gamma_2'(t)|^2}$. (I think I need to explain this WLOG argument better, or it can be avoided. \textbf{Edit referencing notes on Anosov flows later to avoid WLOG!})}, we consider only curves of the form $\gamma(t) = (t, g(t))$ for $0 \leq t \leq 1 - \epsilon$. Then 
 					\begin{align*}
 						\ell(\gamma) &= \int_0^{1 - \epsilon} \frac{\norm{\gamma'(t)}}{1 - |\gamma(t)|^2} \ dt = \int_0^{1 - \epsilon} \frac{\sqrt{1^2 + |g'(t)|^2}}{1 - t^2 - |g^2(t)|} \ dt \\
 						&\geq \int_0^{1 - \epsilon} \frac{1}{1 - t^2} \ dt = \frac{1}{2} \cdot \log \left(\frac{2 - \epsilon}{\epsilon}\right) \\
@@ -208,9 +208,59 @@ To "discover" the Poincaré metric, we start with what we want (invariance of th
 			\end{itemize}
 		\end{proof}
 	
-\subsection*{Completeness of the Poincaré Distance}
+\subsection*{Invariance and Completeness of the Poincaré Distance}
 	To prove the completeness of $D$ under the Poincaré distance, which we have proved is a metric, we need some preliminary results.
-		\begin{lemma} Let $$\beta(P, r) := \{z \in D : d(z, P) < r\}.$$ Then,
+	
+	
+		\begin{lemma}
+			Let $d(\cdot, \cdot)$ denote the Poincaré distance on $D$, and $\varphi: D \to D$ any conformal self-map of the disk. Then, 
+				\begin{itemize}
+					\item[(1)] If $\gamma: [0, 1] \to D$ is continuously differentiable\footnote{The result for piecewise continuously differentiable $\gamma$ follows immediately.}, then $\ell(\gamma) = \ell(\varphi \circ \gamma)$. 
+					
+					\item[(2)] For any $z, w \in D$, $d(z, w) = d(\varphi(z), \varphi(w))$. 
+				\end{itemize}
+		\end{lemma}
+			\begin{proof} ~
+				\begin{itemize}
+					\item[(1)] From how we went through constructing the Poincaré metric, we already know it's conformally invariant. Hence, it's quite easy to see that
+						\begin{align*}
+							\ell(\varphi \circ \gamma) = \int_0^1 |(\varphi \circ \gamma)'(t)|_{\varphi \circ \gamma} \ dt = \int_0^1 |\gamma'(t)|_{\gamma(t)} \ dt = \ell(\gamma).
+						\end{align*}
+					
+					\item[(2)] This follows directly from (1): We have for any continuously differentiable $\gamma$ from $z$ to $w$ 
+						\begin{align*}
+							d(\varphi(z), \varphi(w)) &= \inf_{\substack{\gamma \text{ c.d.} \\ \gamma(0) = \varphi(z), \gamma(1) = \varphi(w)}} \int_0^1 |\gamma'(t)|_{\gamma(t)} \ dt \\
+							&= \inf_{\substack{\gamma \text{ c.d.} \\ \gamma(0) = \varphi(z), \gamma(1) = \varphi(w)}} \int_0^1 |(\varphi^{-1} \circ \gamma)'(t)|_{(\varphi^{-1} \circ \gamma)(t)} \ dt \\ 
+							&\geq \inf_{\substack{\gamma \text{ c.d.} \\ \gamma(0) = z, \gamma(1) = w}} \int_0^1 |\gamma'(t)|_{\gamma(t)} \ dt \\
+							&= d(z, w). 
+						\end{align*}
+					We now go in the other direction,
+						\begin{align*}
+							d(z, w) &= \inf_{\substack{\gamma \text{ c.d.} \\ \gamma(0) = z, \gamma(1) = w}} \int_0^1 |\gamma'(t)|_{\gamma(t)} \ dt \\
+							 \\
+							 &= \inf_{\substack{\gamma \text{ c.d.} \\ \gamma(0) = z, \gamma(1) = w}} \int_0^1 |(\varphi \circ \gamma)'(t)|_{(\varphi \circ \gamma)(t)} \ dt \\
+							 &\geq \inf_{\substack{\gamma \text{ c.d.} \\ \gamma(0) = \varphi(z), \gamma(1) = \varphi(w)}} \int_0^1 |\gamma'(t)|_{\gamma(t)} \ dt \\
+							 &= d(\varphi(z), \varphi(w)).
+ 						\end{align*}
+ 					Hence, we get $d(z, w) = d(\varphi(z), \varphi(w))$ as desired. 
+				\end{itemize}
+			\end{proof}
+		
+		\begin{lemma}[Explicit formula for the Poincaré distance]
+			Given $z, w \in D$, $$\boxed{d(z, w) = \frac{1}{2} \log \left(\frac{|1 - z \overline{w}| + |z - w|}{|1 - z \overline{w}| - |z - w|}\right)}$$
+		\end{lemma}
+			\begin{proof}
+				For any $z, w \in D$, let $\varphi$ be the conformal self-map of the disk defined by $$\varphi(\zeta) = \frac{\zeta - w}{1 - \zeta \overline{w}}.$$ Observe that $\varphi(w) = 0$. Then, using Lemma 1, item 2, together with Proposition 1, item 2,  
+					\begin{align*}
+						d(z, w) &= d(\varphi(z), \varphi(w)) = d(0, \varphi(z)) = \frac{1}{2} \log \left(\frac{1 + |\varphi(z)|}{1 - |\varphi(z)|}\right) \\
+						&= \frac{1}{2} \log \left(\frac{1 + \abs{\frac{z - w}{1 - z \overline{w}}}}{1 - \abs{\frac{z - w}{1 - z \overline{w}}}}\right) \\
+						&= \frac{1}{2} \log \left(\frac{\frac{|1 - z \overline{w}| + |z - w|}{|1 - z \overline{w}|}}{\frac{|1 - z \overline{w}| - |z - w|}{|1 - z \overline{w}|}}\right) \\
+						&= \frac{1}{2} \log \left(\frac{|1 - z \overline{w}| + |z - w|}{|1 - z \overline{w}| - |z - w|}\right)
+					\end{align*}
+				as desired. 
+			\end{proof}
+	
+		\begin{lemma}[NEEDS WORK\footnote{Reference \textit{Ergodic Theory, Symbolic Dynamics, and Hyperbolic Spaces} by Beadford and Keane}] Let $$\beta(P, r) := \{z \in D : d(z, P) < r\}.$$ Then,
 			\begin{itemize}
 				\item[(1)] $\beta(P, r)$ is a Euclidean disk, and
 				
@@ -219,10 +269,23 @@ To "discover" the Poincaré metric, we start with what we want (invariance of th
 		\end{lemma}
 		\begin{proof} ~
 			\begin{itemize}
-				\item[(1)] To show that $\beta(P, r)$ is a Euclidean disk, we'll need to write it as a set $$\{z \in D : d(z, C) < R\}$$ for some center $C$ and some radius $R$.  
-				
-				\item[(2)] 
+				\item[(1)] Let's go backwards by taking a Euclidean disk $D(C, R)$ and turning it into a metric disk. For $z \in D(C, R)$, 
+					\begin{align*}
+						d(z, C) &= \frac{1}{2} \log \left(\frac{|1 - z \overline{C}| + |z - C|}{|1 - z \overline{C}| - |z - C|}\right) \\
+						&\leq \frac{1}{2} \log \left(\frac{|1 - z \overline{C}| + R}{|1 - z \overline{C}| - R}\right).
+					\end{align*}
+				For $C = 0$ (which suffices, because we can turn this disk into any other disk using a disk-preserving conformal automorphism), this gives $$d(z, C) \leq \frac{1}{2} \log\left(\frac{1 + R}{1 - R}\right).$$ So, $D(0, R)$ is a metric disk centered at the metric origin with metric radius $r = \frac{1}{2} \log \left(\frac{1 + R}{1 - R}\right)$. Solving for $R$ gives the Euclidean radius $$R = \frac{e^{2r} - 1}{e^{2r} + 1} < 1 \qquad (0 \leq r < 1).$$ We can now go back and forth between metric disks $\beta(0, r)$ and Euclidean disks $D(0, R)$. Now, since the Poincaré metric is conformally invariant, this stuff always applies regardless of if we change the center. Let $\varphi(\zeta) = \frac{\zeta - P}{1 - \zeta \overline{P}}$, where it follows that $\varphi(\beta(P, r))$ is a Euclidean circle and so $\beta(P, r)$ is by our preceding discussion. I think the center does not change. 
+				\item[(2)] Since $\beta(P, r)$ is a Euclidean disk that is a subset of $D$, it follows that $\overline{\beta(P, r)} \subseteq D$ and so $\beta(P, r)$ is compactly contained in $D$.  
 			\end{itemize}
 		\end{proof}
 		
+		
+		\begin{theorem}
+			The metric space $(D, d(\cdot, \cdot))$ is complete.
+		\end{theorem}
+		\begin{proof}
+			By the above discussions, it follows that the topology induced by the Poincaré distance coincides with the Euclidean topology on the disk. Since that Euclidean topology is complete, so is $(D, d(\cdot, \cdot))$. 
+		\end{proof}
+	
+This closes out our discussion for the section.
 \end{document}
