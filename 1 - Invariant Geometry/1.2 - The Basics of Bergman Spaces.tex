@@ -31,7 +31,9 @@
 	The next lemma provides an important estimate for functions in $A^2(\Omega)$. 
 	
 	\begin{lemma}
-		Let $K \subseteq \Omega$ be compact. There is a constant, $C_K > 0$, depending on $K$, such that $$\boxed{\sup_{z \in K} |f(z)| \leq C_K \norm{f}_{A^2(\Omega)}}$$ for all $f \in A^2(\Omega)$. 
+		
+		Let $K \subseteq \Omega$ be compact. There is a constant, $C_K > 0$, depending on $K$, such that $$\boxed{\sup_{z \in K} |f(z)| \leq C_K \norm{f}_{A^2(\Omega)}}$$ for all $f \in A^2(\Omega).$ 
+		
 	\end{lemma} 
 	
 	\noindent Before we prove it, we'll review a mean value result for holomorphic functions.
@@ -42,6 +44,56 @@
 			$$f(z) = \frac{1}{A(B(z, r))} \int_{B(z, r)} f(t) \ dA(t).$$
 	\end{observation}
 		\begin{proof}
-			
+			As $f$ is holomorphic, we have by Cauchy's integral formula:
+				\begin{align*}
+					f(z) &= \frac{1}{2 \pi i} \int_{B(z, r)} \frac{f(t)}{t - z} \ dt \\
+					&= \frac{1}{2 \pi i} \int_{0}^{2\pi} \frac{f(z + re^{i \theta})}{re^{i \theta}} \cdot r \ d\theta \\
+					&= \frac{1}{2 \pi} \int_{0}^{2 \pi} f(z + re^{i \theta})  \ d \theta 
+				\end{align*}
+			Therefore,
+				\begin{align*}
+					\frac{1}{A(B(z, r))} \int_{B(z, r)} f(t) \ dA(t) &= \frac{1}{\pi r^2} \int_0^{r} \int_{0}^{2 \pi} s f(z + se^{i \theta}) \ d \theta \ ds \\
+					&= \frac{1}{\pi r^2} \int_{0}^r s (2 \pi f(z)) \ ds \qquad \text{by C.I.F.} \\
+					&= \frac{2}{r^2} \left(\frac{r^2}{2} f(z)\right) \\
+					&= f(z)
+				\end{align*}
+			as desired.
+		\end{proof}
+	
+	\noindent We can now prove Lemma 1.
+		\begin{proof}[Proof of Lemma 1]
+			Since $K$ is compact, there exists $r > 0$, depending on $K$, such that for any $z \in K$, $D(z, r) \subseteq \Omega$. Therefore, for all $z \in K$ and $f \in A^2(\Omega)$, we have by the MVP (Observation 1) that
+				\begin{align*}
+					\abs{f(z)} &= \frac{1}{A(B(z, r))}\abs{\int_{B(z, r)} f(t) \ dA(t)} \\
+					&\leq \frac{1}{A(B(z, r))} \int_{\mathbb{C}} \chi_{B(z, r)}(t) \cdot |f(t)| \ dA(t).
+				\end{align*}
+			where $\chi_{B(z, r)}(t)$ is the characteristic function over $B(z, r)$. Using the Cauchy-Schwarz inequality, 
+				\begin{align*}
+					\int_{\mathbb{C}} \chi_{B(z, r)}(t) \cdot |f(t)| \ dA(t) &\leq \frac{1}{A(B(z, r))} \cdot \int_{\mathbb{C}} |\chi_{B(z, r)}(t)|^2 \ dA^{1/2} \cdot \int_{\mathbb{C}} |f(t)|^2 dA^{1/2} \\
+					&= \frac{1}{\sqrt{A(B(z, r))}} \int_{\mathbb{C}} |f(t)|^2 \ dA^{1/2} \\
+					&= \frac{\norm{f}_{A^2(B(z, r))}}{\sqrt{A(B(z, r))}} \leq \frac{\norm{f}_{A^2(\Omega)}}{\sqrt{\pi}r} = C_K \norm{f}_{A^2(\Omega)}.
+				\end{align*}
+			The result follows by passing to the supremum. 
+		\end{proof}
+	
+	It follows from Lemma 1 that $A^2(\Omega)$ is complete, and is therefore a Hilbert space. But it is also a separable Hilbert space. We'll pack all of these results into one theorem.
+		\begin{theorem}
+			$A^2(\Omega)$ is a separable Hilbert space.
+		\end{theorem}
+		\begin{proof} ~
+				\begin{itemize}
+					\item We'll first prove that $A^2(\Omega)$ is complete. Let $\{f_n\}$ be a Cauchy sequence in $A^2(\Omega)$. Obviously, by how $\norm{\cdot}_{A^2(\Omega)}$ is defined (I mean, just look at it), $\{f_n\}$ is a Cauchy sequence in $L^2(\Omega)$, which we know from elementary measure theory to be complete. Let $f \in L^2(\Omega)$ be such that $\lim_{n \to \infty} \norm{f_n - f}_{L^2(\Omega)} = \norm{f_n - f}_{A^2(\Omega)}= 0$. By Lemma 1, for $K \subseteq \Omega$ compact, we have
+						\begin{align*}
+							\lim_{n \to \infty} \sup_{z \in K} |f(z) - f_n(z)| \leq \lim_{n \to \infty} C_K \norm{f(z) - f_n(z)}_{A^2(\Omega)} = 0    
+						\end{align*}
+					whereby it follows that $f \in A^2(\Omega)$. So, $A^2(\Omega)$ is a Hilbert space.
+					
+					\item We can show that $A^2(\Omega)$ is separable by exhibiting a countable orthonormal basis. Let $$\varphi_n(z) = \sqrt{\frac{n + 1}{\pi}}z^n, \qquad n = 0, 1, 2, \dots.$$ For $n, m$ distinct non-negative integers, we have
+						\begin{align*}
+							\langle \varphi_n, \varphi_m \rangle &= \int_\Omega \varphi_n(z) \overline{\varphi_m}(z) \ dA(z) 
+						\end{align*}
+					
+					
+				\end{itemize}
 		\end{proof}
 \end{document}
